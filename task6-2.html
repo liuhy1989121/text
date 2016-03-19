@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<title>task6-2</title>
+	<style type="text/css">
+	*{
+	margin: 0 auto;
+	padding: 0;
+	}
+
+	.container{
+	width: 100%;
+	max-width: 640px;
+	height: 100%;
+	max-height: 1100px;
+	font-size: 62.5%;
+	}
+
+	.header{
+	height: 8%;
+	padding-left: 3%;
+	padding-right: 3.3%;
+	padding-top: 5.4%;
+	padding-bottom: 2.3%;
+	font-size: 3.2em;
+	text-align: center;
+	color: rgb(255,255,255);
+	background-color:rgb(41,189,224); 
+	}
+	
+	.top{
+	height: 8%;
+	padding-top: 2.3%;
+	padding-bottom: 2.3%;
+	padding-left:  6.2%;
+	font-size: 2.5em;
+	color: rgb(70,70,70);
+	background-color: rgb(185,233,245);
+	}
+	
+	.top-p{
+	vertical-align: middle;
+	}
+	
+	.top-img{
+	vertical-align: middle;
+	margin-left: 37%;
+	}
+	
+	.div-angle{
+	padding-left: 10.6%;
+	background-color: rgb(41,189,224);
+	}
+
+	.angle{
+	width: 0px;
+	height: 0px;
+	border-top: 1.3em solid rgb(185,233,245);
+	border-left: 1.3em solid rgb(41,189,224);
+	border-bottom: 1.3em solid rgb(41,189,224);
+	border-right: 1.3em solid rgb(41,189,224);
+	}
+	
+	.hint{
+	padding-left: 11.5%;
+	font-size: 2.3em;
+	color: rgb(255,255,255);
+	background-color: rgb(41,189,224);
+	}
+
+	.middle{
+	padding-top: 6.8%;
+	padding-right: 3%;
+	padding-left: 3%;
+	text-align: center;
+	background-color: rgb(41,189,224); 
+	overflow: hidden;
+	}
+
+	.square{
+	width: 23%;
+	margin-right: 5%;
+	margin-left: 5%;
+	background-color: rgb(255,255,255);
+	float: left;
+	}
+	
+	.name{
+	margin-top: 4%;
+	margin-left: 4%;
+	margin-right: 4%;
+	font-size: 3em;
+	text-align: center;
+	color: rgb(86,86,86);
+	padding-top: 22%;
+	padding-bottom: 22%;
+	background-color: rgb(245,201,123);
+	}
+
+	.mark{
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-bottom: 4%;
+	padding-top: 2.4%;
+	padding-bottom: 2.4%;
+	font-size: 2.2em;
+	text-align: center;
+	color: rgb(255,255,255);
+	background-color: rgb(131,176,154);
+	}
+
+	.type{
+	height: 72px;
+	background-color: rgb(41,189,224);
+	}
+	
+	.type img{
+	display: none;
+	}
+
+	.square:hover img{
+	padding-top: 15%;
+	padding-bottom: 16%;
+	display: inline;
+	}
+
+	.div-button{
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	background-color: rgb(41,189,224);
+	}
+
+	.button{
+	margin-top: 6.5%;
+	margin-bottom: 10%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	padding-left: 31%;
+	padding-right: 31%;
+	font-size: 4em;
+	text-align: center;
+	color: rgb(255,255,255);
+	background-color: rgb(251,180,53);
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="images6/second-iconsquare.png" style="float: left;">
+			<span class="top-p">投票</span>
+			<img src="images6/second-iconfold.png" style="float: right;">
+		</div>
+		<div class="top">	
+			<p class="top-p">发言讨论结束，大家请投票
+			<img src="images6/second-iconaudio.png" class="top-img">
+			</p>
+		</div>
+		<div class="div-angle">
+			<div class="angle"></div>
+		</div>
+		<div class="hint">
+			<p>点击得票数最多人的头像</p>
+		</div>
+		<div class="middle">
+			<div class=" square">
+				<div>
+				<p class="name">水民</p>
+				<p class="mark">1号</p>
+				</div>
+				<div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">水民</p>
+				<p class="mark">2号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">警察</p>
+				<p class="mark">3号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">法官</p>
+				<p class="mark">4号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">狙击手</p>
+				<p class="mark">5号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">医生</p>
+				<p class="mark">6号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">杀手</p>
+				<p class="mark">7号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">水民</p>
+				<p class="mark">8号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">水民</p>
+				<p class="mark">9号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">待定</p>
+				<p class="mark">10号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">待定</p>
+				<p class="mark">11号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+			<div class="square">
+				<div>
+				<p class="name">待定</p>
+				<p class="mark">12号</p>
+				</div>
+				<div class="type">
+				<img src="images6/1.png">
+				<img src="images6/2.png">
+				<img src="images6/3.png">
+				<img src="images6/4.png">
+				</div>
+			</div>
+		</div>
+		<div class="div-button">
+			<a href="task6-3.html">		
+			<button class="button">投死</button>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
